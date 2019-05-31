@@ -92,7 +92,7 @@ export class CustomTips extends Laya.Sprite{
      * @param	posy
      */
     private centers(container:Sprite,posy:number):void {
-        this.pos((container.width - this.tempW) / 2, posy);
+        this.pos(container.width / 2, posy);
     }
 
     /**
@@ -242,7 +242,7 @@ export class CustomTips extends Laya.Sprite{
         tipContainer.addChild(logoImg);
         tipContainer.size(logoImg.width + bgImg.width, logoImg.height);
         
-        tipContainer.pivot(tipContainer.width / 2, tipContainer.height / 2);
+        tipContainer.pivot(tipContainer.width, tipContainer.height);
         
         return tipContainer;
     }
